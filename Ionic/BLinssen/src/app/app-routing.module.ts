@@ -16,7 +16,8 @@ const routes: Routes = [
     loadChildren: './list/list.module#ListPageModule'
   },
   { path: 'terms', loadChildren: './terms/terms.module#TermsPageModule' },
-  { path: 'privacy', loadChildren: './privacy/privacy.module#PrivacyPageModule' }
+  { path: 'privacy', loadChildren: './privacy/privacy.module#PrivacyPageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' }
 ];
 
 @NgModule({

@@ -38,8 +38,8 @@ const firebaseUiAuthConfig: firebaseui.auth.Config = {
     //  requireDisplayName: false,
     //  provider: firebase.auth.EmailAuthProvider.PROVIDER_ID
     //},
-    //firebase.auth.PhoneAuthProvider.PROVIDER_ID,
-    // firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
+    firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+    //firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
   ],
   tosUrl: '/terms',
   privacyPolicyUrl: '/privacy',

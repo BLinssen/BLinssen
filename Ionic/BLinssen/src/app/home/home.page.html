@@ -6,6 +6,11 @@
     <ion-title>
       Home
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>Login</ion-button>
+      <h1 color="secondary">Welcome {{afAuth.auth.currentUser.displayName}}!</h1>
+      <ion-button (click)="signOut()">Sign Out</ion-button>  
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -16,8 +21,7 @@
         <ion-card-subtitle>Get Started</ion-card-subtitle>
         <ion-card-title></ion-card-title>
         <firebase-ui></firebase-ui>
-        <h1 color="secondary">Welcome {{afAuth.auth.currentUser.displayName}}!</h1>
-        <ion-button (click)="signOut()">Sign Out</ion-button>      
+            
       </ion-card-header>
       <ion-card-content>
         <p>Now that your app has been created, you'll want to start building out features and components. Check out some of the resources below for next steps.</p>
